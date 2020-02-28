@@ -33,7 +33,6 @@ while spot < len(total) - 8 + 1:
         large += 1
 
 
-#test
 
 mcount = 0
 spot = 0
