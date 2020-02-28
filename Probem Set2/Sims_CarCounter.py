@@ -79,7 +79,6 @@ while spot < len(total) - 3 + 1:
 Small = smallargecount - sub * 2
 
 
-#TODO Print Statements
 
 print(Small, "small")
 print(medium, "medium")
