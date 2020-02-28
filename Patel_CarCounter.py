@@ -32,6 +32,9 @@ while spot < len(total) - 8 + 1:
     if item == "oxoxxooo":
         large += 1
 
+
+#test
+
 mcount = 0
 spot = 0
 while spot < len(total) - 3 + 1:
