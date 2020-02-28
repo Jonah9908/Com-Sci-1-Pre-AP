@@ -21,22 +21,26 @@ End Required variables:
 You may have any additional variables that you might need to complete
 the program below this line.
 '''
-spot = 0
 
-
-for num in player1Guesses:
-    look = player1Guesses[spot]
-    if look in player2Hand:
-        print("Heres my card")
-    else: 
-        print("Go fish")
-    look = player2Guesses[spot]
-    if look in player1Hand:
-        print("Heres my card")
+def Fish(hand, guess):
+    contains = False
+    spot = 0
+    while spot < len(hand):
+        if hand[spot] == guess:
+            contains = True
+        spot += 1
+    if contains:
+        contains = "HERE'S MY CARD"
     else:
-        print("Go fish")
-    spot = spot + 1
+        contains = "GO FISH"
+    return contains
 
+
+spot = 0
+for num in player1Guesses:
+    print(Fish(player2Hand, player1Guesses[spot]))
+    print(Fish(player1Hand, player2Guesses[spot]))
+    spot += 1
 
 
 
