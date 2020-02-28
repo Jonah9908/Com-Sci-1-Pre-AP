@@ -112,6 +112,7 @@ smallTotal += smallcount(line9)
 smallTotal += smallcount(line10)
 smallTotal -= 2 * largeTotal
 
+
 print(smallTotal, "small")
 print(mediumTotal, "medium")
 print(largeTotal, "large")
