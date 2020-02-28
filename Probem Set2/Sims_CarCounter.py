@@ -60,6 +60,8 @@ medium = mcount - large
 
 #Finds Small car
 
+
+
 smallargecount = 0
 spot = 0
 while spot < len(total) - 2 + 1:
@@ -75,6 +77,9 @@ while spot < len(total) - 3 + 1:
     if item == "ooo":
         sub += 1
 Small = smallargecount - sub * 2
+
+
+#TODO Print Statements
 
 print(Small, "small")
 print(medium, "medium")
