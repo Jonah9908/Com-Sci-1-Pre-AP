@@ -37,6 +37,8 @@ def substring(sentence, start, end):
 
 total = line1 + line2 + line3 + line4 + line5 + line6 + line7 + line8 + line9 + line10
 
+#Finds Large
+
 large = 0
 spot = 0
 while spot < len(total) - 8 + 1:
@@ -44,6 +46,8 @@ while spot < len(total) - 8 + 1:
     spot += 1
     if item == "oxoxxooo":
         large += 1
+
+#Finds Medium
 
 mcount = 0
 spot = 0
@@ -53,6 +57,8 @@ while spot < len(total) - 3 + 1:
     if item == "oxo":
         mcount += 1
 medium = mcount - large
+
+#Finds Small
 
 smallargecount = 0
 spot = 0
