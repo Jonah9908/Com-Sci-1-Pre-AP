@@ -45,14 +45,14 @@ while spot < len(total) - 8 + 1:
     if item == "oxoxxooo":
         large += 1
 
-mediumcount = 0
+mcount = 0
 spot = 0
 while spot < len(total) - 3 + 1:
     item = substring(total, spot, spot + 3)
     spot += 1
     if item == "oxo":
-        mediumcount += 1
-medium = mediumcount - large
+        mcount += 1
+medium = mcount - large
 
 smallargecount = 0
 spot = 0
