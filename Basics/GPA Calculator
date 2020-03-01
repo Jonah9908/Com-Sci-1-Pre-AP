@@ -89,23 +89,34 @@ def unweighted_class(grade):
 
 #Asks for Averages
 
-HUG_Grade = float(input("HUG Grade"))
-PE_Grade = float(input("PE Grade"))
-MAPS_Grade = float(input("Prof_Comm Grade"))
-Geometry_Grade = float(input("Geometry Grade"))
-COM_SCI = float(input("Computer Science Grade"))
-English_Grade = float(input("English Grade"))
-Spanish_Grade = float(input("Spanish Grade"))
-Bio_Grade = float(input("Bio Grade"))
+HUG_Grade = float(input("HUG Grade::"))
+PE_Grade = float(input("PE Grade::"))
+MAPS_Grade = float(input("Prof_Comm Grade::"))
+Geometry_Grade = float(input("Geometry Grade::"))
+COM_SCI_Grade = float(input("Computer Science Grade::"))
+English_Grade = float(input("English Grade::"))
+Spanish_Grade = float(input("Spanish Grade::"))
+Bio_Grade = float(input("Bio Grade::"))
 
 #Converts Averages To GPA
 HUG_Grade = weighted_class(HUG_Grade)
-#TODO Finish Conversions
-#TODO Average all to get Final
+PE_Grade = unweighted_class(PE_Grade)
+MAPS_Grade = unweighted_class(MAPS_Grade)
+Geometry_Grade = weighted_class(Geometry_Grade)
+COM_SCI_Grade = weighted_class(COM_SCI_Grade)
+English_Grade = weighted_class(English_Grade)
+Spanish_Grade = unweighted_class(Spanish_Grade)
+Bio_Grade = weighted_class(Bio_Grade)
 
 
 
+average = 0
+average = ((HUG_Grade + PE_Grade + MAPS_Grade + Geometry_Grade + COM_SCI_Grade + English_Grade + Spanish_Grade + Bio_Grade) / 8)
 
+print("Your GPA is a ", average)
+
+
+input("Press ENTER to stop program")
 
 
 
