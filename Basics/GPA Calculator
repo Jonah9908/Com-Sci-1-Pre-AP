@@ -109,7 +109,7 @@ Spanish_Grade = unweighted_class(Spanish_Grade)
 Bio_Grade = weighted_class(Bio_Grade)
 
 
-
+#Main Script to average
 average = 0
 average = ((HUG_Grade + PE_Grade + MAPS_Grade + Geometry_Grade + COM_SCI_Grade + English_Grade + Spanish_Grade + Bio_Grade) / 8)
 
