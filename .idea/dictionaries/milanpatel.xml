@@ -2,6 +2,8 @@
   <dictionary name="milanpatel">
     <words>
       <w>largecount</w>
+      <w>mediumcount</w>
+      <w>smallcount</w>
     </words>
   </dictionary>
 </component>
