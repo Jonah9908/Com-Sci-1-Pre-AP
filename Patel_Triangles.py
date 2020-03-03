@@ -10,8 +10,8 @@ import math
 
 def area(side1, side2, side3):
     s = (side1 + side2 + side3) / 2
-    area = math.sqrt(s * (s - side1) * (s - side2) * (s - side3))
-    return area
+    a = math.sqrt(s * (s - side1) * (s - side2) * (s - side3))
+    return a
 
 
 def triangle_Type(side1, side2, side3):
