@@ -36,15 +36,15 @@ def odd_total(list1):
 
 # Prints even total
 
-print("Even total:: " + str(even_total(numbers)))
+print("Even total: " + str(even_total(numbers)))
 
 # Prints odd total
 
-print("Even total:: " + str(odd_total(numbers)))
+print("Even total: " + str(odd_total(numbers)))
 
 # Checks to see if even or odd total is higher
 
 if even_total(numbers) > odd_total(numbers):
-    print("Even total is bigger")
+    print("Even total is larger.")
 else:
-    print("Odd total is bigger")
+    print("Odd total is larger.")
