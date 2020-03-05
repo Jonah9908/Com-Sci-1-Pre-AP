@@ -42,9 +42,11 @@ print("Even total: " + str(even_total(numbers)))
 
 print("Odd total: " + str(odd_total(numbers)))
 
-# Checks to see if even or odd total is higher
+# Checks to see if even or odd total is higher or equal
 
 if even_total(numbers) > odd_total(numbers):
     print("Even total is larger.")
-else:
+elif odd_total(numbers) > even_total(numbers):
     print("Odd total is larger.")
+else:
+    print("Numbers are the same.")
