@@ -40,7 +40,7 @@ print("Even total: " + str(even_total(numbers)))
 
 # Prints odd total
 
-print("Even total: " + str(odd_total(numbers)))
+print("Odd total: " + str(odd_total(numbers)))
 
 # Checks to see if even or odd total is higher
 
