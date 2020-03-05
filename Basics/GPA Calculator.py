@@ -113,7 +113,7 @@ Bio_Grade = weighted_class(Bio_Grade)
 average = 0
 average = ((HUG_Grade + PE_Grade + MAPS_Grade + Geometry_Grade + COM_SCI_Grade + English_Grade + Spanish_Grade + Bio_Grade) / 8)
 
-print("Your GPA is a ", average)
+print("Your GPA is a ", "%.2f" % average)
 
 
 input("Press ENTER to stop program")
