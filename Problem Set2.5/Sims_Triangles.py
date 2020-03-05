@@ -28,6 +28,6 @@ def triangle_type(side1, side2, side3):
 # Final print statement/ script
 spot = 0
 for len in sides1:
-    print(triangle_type(sides1[spot], sides2[spot], sides3[spot]) + " with area %.2f" % area(sides1[spot], sides2[spot], sides3[spot]))
+    print(triangle_type(sides1[spot], sides2[spot], sides3[spot]) + " with area " + "%.2f" % area(sides1[spot], sides2[spot], sides3[spot]))
     spot += 1
 
