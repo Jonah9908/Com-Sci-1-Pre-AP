@@ -18,3 +18,4 @@ for num in range(2000, 2100):
     if is_prime(spot):
         print(spot)
     spot += 1
+
