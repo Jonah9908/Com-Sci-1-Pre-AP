@@ -15,8 +15,6 @@ def sum_digits(number):
     return add
 
 
-
-
 spot_outer = 0
 for items in numbers:
     number = numbers[spot_outer]
