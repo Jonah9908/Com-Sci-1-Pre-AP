@@ -1,7 +1,6 @@
 # Milan Patel
 # Lucky.py
 
-
 numbers = [58264, 24864, 125689, 121212353545]
 
 
