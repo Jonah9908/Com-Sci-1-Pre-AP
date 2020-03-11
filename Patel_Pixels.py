@@ -11,6 +11,7 @@ line6 = "BBNBBBBNBB"
 line7 = "BBBNNNNBBB"
 line8 = "BBBBBBBBBB"
 
+
 def b_count(line):
     spot = 0
     count = 0
