@@ -26,3 +26,4 @@ for num in player1Guesses:
     print(Fish(player2Hand, player1Guesses[spot]))
     print(Fish(player1Hand, player2Guesses[spot]))
     spot += 1
+
