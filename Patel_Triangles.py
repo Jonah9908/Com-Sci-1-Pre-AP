@@ -15,7 +15,6 @@ def area(side1, side2, side3):
 
 
 def triangle_Type(side1, side2, side3):
-    triangleType = ""
     if side1 == side2 and side2 == side3:
         triangleType = "equilateral"
     elif side1 == side2 or side2 == side3 or side1 == side3:
