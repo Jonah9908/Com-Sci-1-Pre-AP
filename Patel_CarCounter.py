@@ -98,3 +98,4 @@ smallTotal -= 2 * largeTotal
 print(smallTotal, "small")
 print(mediumTotal, "medium")
 print(largeTotal, "large")
+
