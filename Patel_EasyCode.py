@@ -25,3 +25,4 @@ for word in sentence:
 
 Fcode = Fcode[0:len(Fcode) - 1] + "."
 print(Fcode.capitalize())
+
