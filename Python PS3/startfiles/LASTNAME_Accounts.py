@@ -18,3 +18,37 @@ End Required variables:
 You may have any additional variables that you might need to complete
 the program below this line.
 '''
+
+club1 = []
+club2 = []
+club3 = []
+club4 = []
+club5 = []
+
+# Identifies which club the deposit is going too
+def club_identifier(ID):
+    if ID[0:2] == "01":
+        club1.append(ID[2:])
+    elif ID[0:2] == "02":
+        club2.append(ID[2:])
+    elif ID[0:2] == "03":
+        club3.append(ID[2:])
+    elif ID[0:2] == "04":
+        club4.append(ID[2:])
+    elif ID[0:2] == "05":
+        club5.append(ID[2:])
+
+
+spot = 0
+for len in deposits:
+    club_identifier(deposits[spot])
+    spot += 1
+
+
+
+print(club1)
+print(club2)
+print(club3)
+print(club4)
+print(club5)    
+        

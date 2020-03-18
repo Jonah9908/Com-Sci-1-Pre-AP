@@ -1,6 +1,6 @@
 # Jonah Sims
 # PrimeCentury.py
-
+# Done
 
 def is_prime(integer):
     prime = True

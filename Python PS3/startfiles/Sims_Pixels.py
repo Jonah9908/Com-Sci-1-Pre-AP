@@ -1,6 +1,6 @@
 # Jonah Sims
 # Pixels.py
-
+# Done
 '''
 Begin Required variables section:
 =================================

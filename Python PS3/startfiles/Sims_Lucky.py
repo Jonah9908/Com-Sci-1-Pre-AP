@@ -1,5 +1,6 @@
 # Jonah Sims
 # Lucky.py
+# Done
 
 '''
 Begin Required variables section:
@@ -21,13 +22,24 @@ the program below this line.
 
 #Function to determine sum of digets and if its even
 def sum_digets(number):
+    number = str(number)
     sum = 0
     spot = 0
-    for hello in number:
-        sum += number[spot]
+    for num in number:
+        sum += int(number[spot])
         spot += 1
     return sum
 
+# Final call
+spot = 0
+output_num = 0
+for len in numbers:
+    output_num = sum_digets(numbers[spot])
+    if output_num % 2 == 0:
+        print("Lucky " + str(numbers[spot]))
+    else:
+        print("Not Lucky " + str(numbers[spot]))
+    spot += 1
 
-print(str(sum_digets(121212353545)))
+    
 
