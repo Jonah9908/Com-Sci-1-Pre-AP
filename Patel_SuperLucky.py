@@ -5,18 +5,18 @@ nums = [1269, 1234, 1224, 2357, 527869, 555555, 4469]
 
 
 def is_prime(number):
-    prime = True
-    num = number / 2
+    inprime = True
+    inum = number / 2
     count = 2
-    while count <= num:
+    while count <= inum:
         if number % count == 0:
-            prime = False
+            inprime = False
         count += 1
     if number == 1:
-        prime = False
+        inprime = False
     if number == 0:
-        prime = False
-    return prime
+        inprime = False
+    return inprime
 
 
 outerspot = 0
@@ -26,8 +26,8 @@ while outerspot < len(nums):
     number = len(str(nums[outerspot]))
     while spot < number:
         num = nums[outerspot]
-        nnn = str(num)
-        n = nnn[spot]
+        snum = str(num)
+        n = snum[spot]
         if is_prime(int(n)):
             prime += 1
         spot += 1
