@@ -45,10 +45,7 @@ for len in deposits:
     spot += 1
 
 
-
-print(club1)
-print(club2)
-print(club3)
-print(club4)
-print(club5)    
+hello1 = str(club1[0])
+hello = hello1[len(hello1) - 2] + "." + hello1[::2]
+print(hello)
         
