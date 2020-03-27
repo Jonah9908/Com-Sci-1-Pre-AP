@@ -32,20 +32,28 @@ def club_identifier(ID):
     elif ID[0:2] == "02":
         club2.append(ID[2:])
     elif ID[0:2] == "03":
-    elif ID[0:2] == "04":
         club3.append(ID[2:])
+    elif ID[0:2] == "04":
         club4.append(ID[2:])
     elif ID[0:2] == "05":
         club5.append(ID[2:])
 
-
+#Function to calculate the total amount for every club
 spot = 0
-for len in deposits:
-    club_identifier(deposits[spot])
-    spot += 1
+def club_total(club):
+    total = 0
+    for num in club:
+             spot += 1
+
+    return spot #getting an error on returning spot, I have no clue
+
+print(club_total(club3))
 
 
-hello1 = str(club1[0])
-hello = hello1[len(hello1) - 2] + "." + hello1[::2]
-print(hello)
-        
+
+
+'''
+first = ((club1[0])[-2])
+last =  ((club1[0])[-2])
+'''
+
