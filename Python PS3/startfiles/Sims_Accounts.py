@@ -32,8 +32,8 @@ def club_identifier(ID):
     elif ID[0:2] == "02":
         club2.append(ID[2:])
     elif ID[0:2] == "03":
-        club3.append(ID[2:])
     elif ID[0:2] == "04":
+        club3.append(ID[2:])
         club4.append(ID[2:])
     elif ID[0:2] == "05":
         club5.append(ID[2:])
