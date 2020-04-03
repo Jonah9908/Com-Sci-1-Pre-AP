@@ -1,5 +1,6 @@
 # First Last
 # Accounts.py
+# Done
 
 '''
 Begin Required variables section:
@@ -19,41 +20,45 @@ You may have any additional variables that you might need to complete
 the program below this line.
 '''
 
-club1 = []
-club2 = []
-club3 = []
-club4 = []
-club5 = []
+club1 = 0
+club2 = 0
+club3 = 0
+club4 = 0
+club5 = 0
 
-# Identifies which club the deposit is going too
-def club_identifier(ID):
-    if ID[0:2] == "01":
-        club1.append(ID[2:])
-    elif ID[0:2] == "02":
-        club2.append(ID[2:])
-    elif ID[0:2] == "03":
-        club3.append(ID[2:])
-    elif ID[0:2] == "04":
-        club4.append(ID[2:])
-    elif ID[0:2] == "05":
-        club5.append(ID[2:])
-
-#Function to calculate the total amount for every club
+# Calculates total for each club
 spot = 0
-def club_total(club):
-    total = 0
-    for num in club:
-             spot += 1
+for num in deposits:
+    num = deposits[spot]
+    ID = num[0:2]
+    amount = num[2::]
+    amount = int(amount)
+    if ID == "01":
+        club1 += amount
+    elif ID == "02":
+        club2 += amount
+    elif ID == "03":
+        club3 += amount
+    elif ID == "04":
+        club4 += amount
+    elif ID == "05":
+        club5 += amount
+    spot += 1
 
-    return spot #getting an error on returning spot, I have no clue
+# Converts full number to number with cents
 
-print(club_total(club3))
+club1 = int(club1) / 100
+club2 = int(club2) / 100
+club3 = int(club3) / 100
+club4 = int(club4) / 100
+club5 = int(club5) / 100
 
+# Print statements
 
+print("1" , str(club1))
+print("2" , str(club2))
+print("3" , str(club3))
+print("4" , str(club4))
+print("5" , str(club5))
 
-
-'''
-first = ((club1[0])[-2])
-last =  ((club1[0])[-2])
-'''
 
