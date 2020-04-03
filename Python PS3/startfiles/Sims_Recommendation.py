@@ -1,5 +1,6 @@
 # First Last
 # Recommendation.py
+# Done
 
 '''
 Begin Required variables section:
@@ -18,3 +19,15 @@ End Required variables:
 You may have any additional variables that you might need to complete
 the program below this line.
 '''
+
+#Replaces everything
+
+recLetter = recLetter.replace('Sally', 'Billy')
+recLetter = recLetter.replace('She', 'He')
+recLetter = recLetter.replace('she', 'he')
+recLetter = recLetter.replace('her', 'his')
+
+print(recLetter)
+
+
+
