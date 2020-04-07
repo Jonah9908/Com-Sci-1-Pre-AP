@@ -17,3 +17,22 @@ End Required variables:
 You may have any additional variables that you might need to complete
 the program below this line.
 '''
+
+
+def is_prime(number):
+    prime = True
+    inum = number / 2
+    count = 2
+    while count <= inum:
+        if number % count == 0:
+            prime =  False
+        count += 1
+    if number == 1:
+        prime =  False
+    if number == 0:
+        prime =  False
+    return prime
+
+
+for num in nums:
+
