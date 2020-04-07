@@ -18,3 +18,18 @@ End Required variables:
 You may have any additional variables that you might need to complete
 the program below this line.
 '''
+
+def reverse(word):
+    spot = len(word) - 1
+    new_word = ""
+    for num in len(word):
+        new_letter = word[spot]
+        new_word = new_letter + new_word
+        spot -= 1
+    return new_word
+
+
+print(reverse("hello"))
+
+
+
