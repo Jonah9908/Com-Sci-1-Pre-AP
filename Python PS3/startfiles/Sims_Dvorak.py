@@ -1,4 +1,4 @@
-# First Last
+# Jonah Sims
 # Dvorak.py
 
 '''
@@ -21,3 +21,18 @@ End Required variables:
 You may have any additional variables that you might need to complete
 the program below this line.
 '''
+
+def converter(Ddorak1):
+    spot = 0
+    for num in dvorak:
+        if Ddorak1 == dvorak[spot]: #todo does not work, needs fixing
+            return spot # '==' function does not work, cannot find that its equal to anything
+    spot += 1
+
+
+
+
+print(converter('r'))
+
+print(dvorak[30])
+

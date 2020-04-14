@@ -1,5 +1,6 @@
-# First Last
+# Jonah Sims
 # Palindrome.py
+# Done
 
 '''
 Begin Required variables section:
@@ -18,18 +19,29 @@ End Required variables:
 You may have any additional variables that you might need to complete
 the program below this line.
 '''
-
+#Checks to see if word is a palindrome
 def reverse(word):
     spot = len(word) - 1
     new_word = ""
-    for num in len(word):
+    while spot >= 0:
         new_letter = word[spot]
-        new_word = new_letter + new_word
+        new_word = new_word + new_letter
         spot -= 1
     return new_word
 
+#Loop that runs it it through the list
+spot = 0
+for num in words:
+    original_word = words[spot]
+    original_word =  original_word.lower()
+    reverse_word = reverse(original_word)
+    if original_word == reverse_word:
+        print("PALINDROME")
+    else:
+        print("just a word")
+    spot += 1
 
-print(reverse("hello"))
+
 
 
 
