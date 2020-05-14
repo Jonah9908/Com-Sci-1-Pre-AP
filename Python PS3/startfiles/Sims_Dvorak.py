@@ -22,17 +22,15 @@ You may have any additional variables that you might need to complete
 the program below this line.
 '''
 
-def converter(Ddorak1):
-    spot = 0
-    for num in dvorak:
-        if Ddorak1 == dvorak[spot]: #todo does not work, needs fixing
-            return spot # '==' function does not work, cannot find that its equal to anything
+sentence = ""
+spot = 0
+while spot < len(dvorakText):
+    in_spot = 0
+    while in_spot < len(dvorak):
+        if dvorakText[spot] == dvorak[in_spot]:
+            term = in_spot
+            sentence += qwerty[term]
+        in_spot += 1
     spot += 1
-
-
-
-
-print(converter('r'))
-
-print(dvorak[30])
+print(sentence)
 
