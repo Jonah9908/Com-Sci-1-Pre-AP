@@ -33,4 +33,5 @@ while spot < len(dvorakText):
         in_spot += 1
     spot += 1
 print(sentence)
+"hello"
 
